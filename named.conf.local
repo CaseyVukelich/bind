@@ -1,0 +1,11 @@
+// Zones
+zone "example.com" {
+  type master;
+  file "/etc/bind/db.example.com";
+};
+
+// Reverse zones
+zone "0.1.10.in-addr.arpa" {
+  type master;
+  file "/etc/bind/db.10";
+};
